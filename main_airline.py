@@ -25,7 +25,7 @@ from Air_Inv_Ext import airinvex
 
 
 config_obj = configparser.ConfigParser()
-config_obj.read('/home/shashi/Documents/WorkingFolder/venv/afcons/Airline_render/config.ini')
+config_obj.read('/code/config.ini')
 
 sppaths = config_obj['spdl_path']
 spparam = config_obj['spdoclib']
