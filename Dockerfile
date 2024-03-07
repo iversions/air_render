@@ -8,4 +8,4 @@ RUN pip install --no-cache-dir -r /code/requirements.txt
 
 COPY ./ /code
 
-CMD python /code/main_tel.py
+CMD python /code/main_airline.py
