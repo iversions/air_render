@@ -1,7 +1,7 @@
-FROM python:3.9
+FROM python:3.9-slim-bullseye
 
-RUN python3 -m venv $VIRTUAL_ENV
 ENV VIRTUAL_ENV=/opt/venv
+RUN python3 -m venv $VIRTUAL_ENV
 ENV PATH=”$VIRTUAL_ENV/bin:$PATH”
 
 WORKDIR /code
@@ -12,4 +12,4 @@ RUN pip install --no-cache-dir -r /code/requirements.txt
 
 COPY ./ /code
 
-CMD python /code/main_airline.py
+CMD ["python", "/code/main_airline.py"]
